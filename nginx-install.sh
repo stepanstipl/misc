@@ -80,10 +80,10 @@ test_pre() {
     [[ $EUID -eq 0 ]] || error_exit "This script needs to be run as root or with elevated priviledges"
     
     [[ -x ${YUM_CMD} ]] || error_exit "Can't find yum"
-    [[ -x ${RPM_CMD} ]] || error_exit "Can't find yum"
-    [[ -x ${CURL_CMD} ]] || error_exit "Can't find yum"
-    [[ -x ${IPTABLES_CMD} ]] || error_exit "Can't find yum"
-    [[ -x ${CHKCONFIG_CMD} ]] || error_exit "Can't find yum"
+    [[ -x ${RPM_CMD} ]] || error_exit "Can't find rpm"
+    [[ -x ${CURL_CMD} ]] || error_exit "Can't find curl"
+    [[ -x ${IPTABLES_CMD} ]] || error_exit "Can't find iptables"
+    [[ -x ${CHKCONFIG_CMD} ]] || error_exit "Can't find chkconfig"
 }
 
 setup_nginx_repo() {
